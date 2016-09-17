@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PAm-W0-LDd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--History View Controller-->
+        <scene sceneID="n8I-4t-vgs">
+            <objects>
+                <viewController id="dkQ-A6-2SQ" customClass="HistoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zHf-xu-tui"/>
+                        <viewControllerLayoutGuide type="bottom" id="7w1-7G-kRu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbN-55-8FH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z5j-y9-6ox">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="dkQ-A6-2SQ" id="4hQ-ZS-SNs"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg4-M3-hRo">
+                                <frame key="frameInset" minX="166" minY="582" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Z5j-y9-6ox" secondAttribute="trailing" id="0HK-Qw-eFA"/>
+                            <constraint firstItem="Z5j-y9-6ox" firstAttribute="top" secondItem="zHf-xu-tui" secondAttribute="bottom" id="3uT-dz-1EY"/>
+                            <constraint firstItem="Z5j-y9-6ox" firstAttribute="leading" secondItem="hbN-55-8FH" secondAttribute="leading" id="JFN-yY-lCe"/>
+                            <constraint firstItem="7w1-7G-kRu" firstAttribute="top" secondItem="Z5j-y9-6ox" secondAttribute="bottom" constant="50" id="LIG-Sm-Z2Q"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="bZN-e4-U3P"/>
+                    <connections>
+                        <outlet property="averageGazeLabel" destination="Jg4-M3-hRo" id="iV1-iL-xNo"/>
+                        <outlet property="tableView" destination="Z5j-y9-6ox" id="JUD-mQ-BFt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="693-Fb-c4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.8" y="-597.75112443778119"/>
+        </scene>
+        <!--Pref-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CloudController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-YB-ZGe">
+                                <frame key="frameInset" minX="63" minY="112" width="249" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BDW-w1-TCb"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zxF-rA-adC">
+                                <frame key="frameInset" minX="63" minY="168" width="249" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="TN9-h9-qdR"/>
+                                </connections>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEX-eu-evw">
+                                <frame key="frameInset" minX="163" minY="219" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="saveUserChanges:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7FN-VB-Cq3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pref" image="ConfigIcon" id="aNd-oW-tRL"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="IQr-YB-ZGe" id="spf-DU-8Yg"/>
+                        <outlet property="passwordTextField" destination="zxF-rA-adC" id="uqU-lP-dRH"/>
+                        <outlet property="validtaionButton" destination="eEX-eu-evw" id="RrK-B9-BHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.8" y="877.51124437781118"/>
+        </scene>
+        <!--Plot-->
+        <scene sceneID="0sb-Rr-Unr">
+            <objects>
+                <viewController id="u4T-MS-mWu" customClass="GraphViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KFe-MC-48N"/>
+                        <viewControllerLayoutGuide type="bottom" id="pFU-ax-BIe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aT7-sE-o1g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bq-G8-2Cs" customClass="CPTGraphHostingView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8bq-G8-2Cs" secondAttribute="trailing" id="CWX-Rr-J5X"/>
+                            <constraint firstItem="8bq-G8-2Cs" firstAttribute="top" secondItem="KFe-MC-48N" secondAttribute="bottom" id="fQz-oX-JJx"/>
+                            <constraint firstItem="8bq-G8-2Cs" firstAttribute="leading" secondItem="aT7-sE-o1g" secondAttribute="leading" id="rmB-s0-5Td"/>
+                            <constraint firstItem="8bq-G8-2Cs" firstAttribute="bottom" secondItem="pFU-ax-BIe" secondAttribute="top" id="sOS-oQ-pF8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Plot" image="PlotIcon" id="SjW-JA-jdP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FaL-eo-Tga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.8" y="104.7976011994003"/>
+        </scene>
+        <!--Root Tab Controller-->
+        <scene sceneID="Lrm-SH-4LC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PAm-W0-LDd" customClass="RootTabController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="RuV-VQ-qdp">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="u4T-MS-mWu" kind="relationship" relationship="viewControllers" id="M5H-im-hPU"/>
+                        <segue destination="dkQ-A6-2SQ" kind="relationship" relationship="viewControllers" id="AGw-SP-1Dq"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="wsU-B5-7rm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SwW-CI-Cet" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207" y="105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ConfigIcon" width="32" height="32"/>
+        <image name="PlotIcon" width="32" height="32"/>
+    </resources>
+</document>

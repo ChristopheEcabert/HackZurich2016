@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05DA040B77822D814215E3F8 /* libPods-FuelPFMClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 703D70F444806FFB5F2A2368 /* libPods-FuelPFMClient.a */; };
+		9D0BE6BD1D8DB2A800092710 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BE6BC1D8DB2A800092710 /* Transaction.m */; };
+		9D0BE6BF1D8DBC4D00092710 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0BE6BE1D8DBC4D00092710 /* TransactionTableViewCell.xib */; };
+		9D6CF2051D8CC5FA00D580E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CF2041D8CC5FA00D580E7 /* GoogleService-Info.plist */; };
+		9D6CF2071D8D23FE00D580E7 /* user_info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CF2061D8D23FE00D580E7 /* user_info.plist */; };
+		9D6CF20A1D8D31F700D580E7 /* RootTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CF2091D8D31F700D580E7 /* RootTabController.m */; };
+		9D6CF20E1D8D32F200D580E7 /* CloudController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CF20D1D8D32F200D580E7 /* CloudController.m */; };
+		9D6CF2111D8D362000D580E7 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CF2101D8D362000D580E7 /* HistoryViewController.m */; };
+		9D6CF2141D8D36BA00D580E7 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CF2131D8D36BA00D580E7 /* GraphViewController.m */; };
+		9D6CF2181D8DA18500D580E7 /* TransactionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CF2171D8DA18500D580E7 /* TransactionDataSource.m */; };
+		9D6CF21F1D8DA36E00D580E7 /* TransactionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CF21E1D8DA36E00D580E7 /* TransactionTableViewCell.m */; };
+		9D93EDE61D8CB951007A9FC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D93EDE51D8CB951007A9FC5 /* main.m */; };
+		9D93EDE91D8CB951007A9FC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D93EDE81D8CB951007A9FC5 /* AppDelegate.m */; };
+		9D93EDEF1D8CB951007A9FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D93EDED1D8CB951007A9FC5 /* Main.storyboard */; };
+		9D93EDF11D8CB951007A9FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D93EDF01D8CB951007A9FC5 /* Assets.xcassets */; };
+		9D93EDF41D8CB951007A9FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D93EDF21D8CB951007A9FC5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11EB396315615A667632BE2A /* Pods-FuelPFMClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelPFMClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelPFMClient/Pods-FuelPFMClient.debug.xcconfig"; sourceTree = "<group>"; };
+		4C5DA2005B3D44CBEDA67664 /* Pods-FuelPFMClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelPFMClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelPFMClient/Pods-FuelPFMClient.release.xcconfig"; sourceTree = "<group>"; };
+		703D70F444806FFB5F2A2368 /* libPods-FuelPFMClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuelPFMClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0BE6BB1D8DB2A800092710 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transaction.h; path = model/Transaction.h; sourceTree = "<group>"; };
+		9D0BE6BC1D8DB2A800092710 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Transaction.m; path = model/Transaction.m; sourceTree = "<group>"; };
+		9D0BE6BE1D8DBC4D00092710 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		9D6CF2041D8CC5FA00D580E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9D6CF2061D8D23FE00D580E7 /* user_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = user_info.plist; sourceTree = "<group>"; };
+		9D6CF2081D8D31F700D580E7 /* RootTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootTabController.h; path = controller/RootTabController.h; sourceTree = "<group>"; };
+		9D6CF2091D8D31F700D580E7 /* RootTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootTabController.m; path = controller/RootTabController.m; sourceTree = "<group>"; };
+		9D6CF20C1D8D32F200D580E7 /* CloudController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudController.h; path = controller/CloudController.h; sourceTree = "<group>"; };
+		9D6CF20D1D8D32F200D580E7 /* CloudController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudController.m; path = controller/CloudController.m; sourceTree = "<group>"; };
+		9D6CF20F1D8D362000D580E7 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryViewController.h; path = controller/HistoryViewController.h; sourceTree = "<group>"; };
+		9D6CF2101D8D362000D580E7 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewController.m; path = controller/HistoryViewController.m; sourceTree = "<group>"; };
+		9D6CF2121D8D36BA00D580E7 /* GraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphViewController.h; path = controller/GraphViewController.h; sourceTree = "<group>"; };
+		9D6CF2131D8D36BA00D580E7 /* GraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphViewController.m; path = controller/GraphViewController.m; sourceTree = "<group>"; };
+		9D6CF2161D8DA18500D580E7 /* TransactionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionDataSource.h; path = model/TransactionDataSource.h; sourceTree = "<group>"; };
+		9D6CF2171D8DA18500D580E7 /* TransactionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionDataSource.m; path = model/TransactionDataSource.m; sourceTree = "<group>"; };
+		9D6CF21D1D8DA36E00D580E7 /* TransactionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionTableViewCell.h; path = view/TransactionTableViewCell.h; sourceTree = "<group>"; };
+		9D6CF21E1D8DA36E00D580E7 /* TransactionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionTableViewCell.m; path = view/TransactionTableViewCell.m; sourceTree = "<group>"; };
+		9D93EDE11D8CB951007A9FC5 /* FuelPFMClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelPFMClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D93EDE51D8CB951007A9FC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D93EDE71D8CB951007A9FC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D93EDE81D8CB951007A9FC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D93EDEE1D8CB951007A9FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D93EDF01D8CB951007A9FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D93EDF31D8CB951007A9FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D93EDF51D8CB951007A9FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D93EDDE1D8CB950007A9FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DA040B77822D814215E3F8 /* libPods-FuelPFMClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D44B7554BA213B5BEA941DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11EB396315615A667632BE2A /* Pods-FuelPFMClient.debug.xcconfig */,
+				4C5DA2005B3D44CBEDA67664 /* Pods-FuelPFMClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D6CF20B1D8D320400D580E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CF2081D8D31F700D580E7 /* RootTabController.h */,
+				9D6CF2091D8D31F700D580E7 /* RootTabController.m */,
+				9D6CF20C1D8D32F200D580E7 /* CloudController.h */,
+				9D6CF20D1D8D32F200D580E7 /* CloudController.m */,
+				9D6CF20F1D8D362000D580E7 /* HistoryViewController.h */,
+				9D6CF2101D8D362000D580E7 /* HistoryViewController.m */,
+				9D6CF2121D8D36BA00D580E7 /* GraphViewController.h */,
+				9D6CF2131D8D36BA00D580E7 /* GraphViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9D6CF2151D8DA14F00D580E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CF2161D8DA18500D580E7 /* TransactionDataSource.h */,
+				9D6CF2171D8DA18500D580E7 /* TransactionDataSource.m */,
+				9D0BE6BB1D8DB2A800092710 /* Transaction.h */,
+				9D0BE6BC1D8DB2A800092710 /* Transaction.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9D6CF21C1D8DA35000D580E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CF21D1D8DA36E00D580E7 /* TransactionTableViewCell.h */,
+				9D6CF21E1D8DA36E00D580E7 /* TransactionTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9D93EDD81D8CB950007A9FC5 = {
+			isa = PBXGroup;
+			children = (
+				9D93EDE31D8CB951007A9FC5 /* FuelPFMClient */,
+				9D93EDE21D8CB951007A9FC5 /* Products */,
+				1D44B7554BA213B5BEA941DF /* Pods */,
+				EB97DCA4DD593E04485CAEB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D93EDE21D8CB951007A9FC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D93EDE11D8CB951007A9FC5 /* FuelPFMClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D93EDE31D8CB951007A9FC5 /* FuelPFMClient */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CF21C1D8DA35000D580E7 /* View */,
+				9D6CF2151D8DA14F00D580E7 /* Model */,
+				9D93EDE71D8CB951007A9FC5 /* AppDelegate.h */,
+				9D93EDE81D8CB951007A9FC5 /* AppDelegate.m */,
+				9D6CF20B1D8D320400D580E7 /* Controller */,
+				9D93EDED1D8CB951007A9FC5 /* Main.storyboard */,
+				9D93EDF01D8CB951007A9FC5 /* Assets.xcassets */,
+				9D93EDF21D8CB951007A9FC5 /* LaunchScreen.storyboard */,
+				9D93EDF51D8CB951007A9FC5 /* Info.plist */,
+				9D93EDE41D8CB951007A9FC5 /* Supporting Files */,
+			);
+			path = FuelPFMClient;
+			sourceTree = "<group>";
+		};
+		9D93EDE41D8CB951007A9FC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D0BE6BE1D8DBC4D00092710 /* TransactionTableViewCell.xib */,
+				9D6CF2041D8CC5FA00D580E7 /* GoogleService-Info.plist */,
+				9D93EDE51D8CB951007A9FC5 /* main.m */,
+				9D6CF2061D8D23FE00D580E7 /* user_info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB97DCA4DD593E04485CAEB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				703D70F444806FFB5F2A2368 /* libPods-FuelPFMClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D93EDE01D8CB950007A9FC5 /* FuelPFMClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D93EDF81D8CB951007A9FC5 /* Build configuration list for PBXNativeTarget "FuelPFMClient" */;
+			buildPhases = (
+				E0D1C404FDE5203658DC8AEB /* [CP] Check Pods Manifest.lock */,
+				9D93EDDD1D8CB950007A9FC5 /* Sources */,
+				9D93EDDE1D8CB950007A9FC5 /* Frameworks */,
+				9D93EDDF1D8CB950007A9FC5 /* Resources */,
+				FD337A1A0E68C0C9113033B5 /* [CP] Embed Pods Frameworks */,
+				C1D6766C425DAA40A4EA0A54 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuelPFMClient;
+			productName = FuelPFMClient;
+			productReference = 9D93EDE11D8CB951007A9FC5 /* FuelPFMClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D93EDD91D8CB950007A9FC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Christophe Ecabert";
+				TargetAttributes = {
+					9D93EDE01D8CB950007A9FC5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 38TACGVE9D;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9D93EDDC1D8CB950007A9FC5 /* Build configuration list for PBXProject "FuelPFMClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D93EDD81D8CB950007A9FC5;
+			productRefGroup = 9D93EDE21D8CB951007A9FC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D93EDE01D8CB950007A9FC5 /* FuelPFMClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D93EDDF1D8CB950007A9FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D93EDF41D8CB951007A9FC5 /* LaunchScreen.storyboard in Resources */,
+				9D6CF2051D8CC5FA00D580E7 /* GoogleService-Info.plist in Resources */,
+				9D93EDF11D8CB951007A9FC5 /* Assets.xcassets in Resources */,
+				9D93EDEF1D8CB951007A9FC5 /* Main.storyboard in Resources */,
+				9D0BE6BF1D8DBC4D00092710 /* TransactionTableViewCell.xib in Resources */,
+				9D6CF2071D8D23FE00D580E7 /* user_info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1D6766C425DAA40A4EA0A54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelPFMClient/Pods-FuelPFMClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D1C404FDE5203658DC8AEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD337A1A0E68C0C9113033B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelPFMClient/Pods-FuelPFMClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D93EDDD1D8CB950007A9FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6CF20A1D8D31F700D580E7 /* RootTabController.m in Sources */,
+				9D6CF21F1D8DA36E00D580E7 /* TransactionTableViewCell.m in Sources */,
+				9D93EDE91D8CB951007A9FC5 /* AppDelegate.m in Sources */,
+				9D93EDE61D8CB951007A9FC5 /* main.m in Sources */,
+				9D6CF2111D8D362000D580E7 /* HistoryViewController.m in Sources */,
+				9D6CF2181D8DA18500D580E7 /* TransactionDataSource.m in Sources */,
+				9D6CF20E1D8D32F200D580E7 /* CloudController.m in Sources */,
+				9D6CF2141D8D36BA00D580E7 /* GraphViewController.m in Sources */,
+				9D0BE6BD1D8DB2A800092710 /* Transaction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D93EDED1D8CB951007A9FC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D93EDEE1D8CB951007A9FC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D93EDF21D8CB951007A9FC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D93EDF31D8CB951007A9FC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D93EDF61D8CB951007A9FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D93EDF71D8CB951007A9FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D93EDF91D8CB951007A9FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11EB396315615A667632BE2A /* Pods-FuelPFMClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38TACGVE9D;
+				INFOPLIST_FILE = FuelPFMClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chris.FuelPFMClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9D93EDFA1D8CB951007A9FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5DA2005B3D44CBEDA67664 /* Pods-FuelPFMClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38TACGVE9D;
+				INFOPLIST_FILE = FuelPFMClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chris.FuelPFMClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D93EDDC1D8CB950007A9FC5 /* Build configuration list for PBXProject "FuelPFMClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D93EDF61D8CB951007A9FC5 /* Debug */,
+				9D93EDF71D8CB951007A9FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D93EDF81D8CB951007A9FC5 /* Build configuration list for PBXNativeTarget "FuelPFMClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D93EDF91D8CB951007A9FC5 /* Debug */,
+				9D93EDFA1D8CB951007A9FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D93EDD91D8CB950007A9FC5 /* Project object */;
+}
