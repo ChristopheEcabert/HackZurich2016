@@ -10,5 +10,5 @@ target 'FuelPFMClient' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'FirebaseUI'
-  pod 'CorePlot' '~> 2.2'
+  pod 'CorePlot', :git => 'https://github.com/core-plot/core-plot.git', :branch => 'release-2.2'
 end

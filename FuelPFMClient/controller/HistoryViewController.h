@@ -19,9 +19,10 @@
 @property (strong, nonatomic) FirebaseTableViewDataSource* dataSource;
 /** Reference to UI */
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-/** Average gas */
-@property (weak, nonatomic) IBOutlet UILabel *averageGazeLabel;
+/** Total gas */
+@property (weak, nonatomic) IBOutlet UILabel *totalGazeLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
 
 /** Provide user ID */
 - (NSString *) getUid;

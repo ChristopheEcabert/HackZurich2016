@@ -99,14 +99,26 @@
  *  @brief  Update entries saved into config file
  */
 -(void) updateUserConfigFile {
-  NSString* path = [[NSBundle mainBundle] pathForResource:@"user_info"
-                                                   ofType:@"plist"];
-  NSMutableDictionary* data = [[NSMutableDictionary alloc]
-                               initWithContentsOfFile:path];
-  if (data) {
-    [data setValue:_email forKey:@"email"];
-    [data setValue:_pwd forKey:@"pwd"];
-    [data writeToFile:path atomically:YES];
+  
+  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                       NSUserDomainMask,
+                                                       YES);
+  NSString *documentsDirectory = [paths objectAtIndex:0];
+  NSString *path = [documentsDirectory stringByAppendingPathComponent:@"user_info.plist"];
+  NSFileManager *fileManager = [NSFileManager defaultManager];
+  if ([fileManager fileExistsAtPath:path]) {
+    
+    NSMutableDictionary* data = [[NSMutableDictionary alloc]
+                                 initWithContentsOfFile:path];
+    if (data) {
+      [data setValue:_email forKey:@"email"];
+      [data setValue:_pwd forKey:@"pwd"];
+      
+      
+      
+      BOOL succes = [data writeToFile:path atomically:YES];
+      int a = 0;
+    }
   }
 }
 

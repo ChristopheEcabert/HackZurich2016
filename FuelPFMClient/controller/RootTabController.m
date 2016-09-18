@@ -65,53 +65,63 @@
 
 -(void) connectToDatabase {
   // Open plist and check for user
-  NSString* path =  [[NSBundle mainBundle] pathForResource:@"user_info"
-                                                    ofType:@"plist"];
-  if (path) {
-    NSDictionary* user_info = [[NSDictionary alloc]
-                               initWithContentsOfFile:path];
-    NSString* email = [user_info objectForKey:@"email"];
-    NSString* pwd = [user_info objectForKey:@"pwd"];
-    if ([email length] != 0 && [pwd length] != 0) {
-      // Connect to data base with stored login
-      [[FIRAuth auth] signInWithEmail:email
-                             password:pwd
-                           completion:^(FIRUser* user, NSError* error){
-                             
-                             
-                             
-                             NSLog(@"Log : %@", error.localizedDescription);
-                             
-                             /*FIRDatabaseReference* ref = [[FIRDatabase database] reference];
-                             
-                             FIRDatabaseQuery* users = [ref child:@"data2/Ws9PLZoJfiM3GEBReLJf5qYQkL02"];
-                             
-                             //FIRDatabaseQuery* spec = [users queryEqualToValue:@"christophe"];
-                             
-                             [users observeEventType:FIRDataEventTypeChildAdded
-                                          withBlock:^(FIRDataSnapshot* snapshot) {
-                                          
-                                            NSLog(@"key was : %@", snapshot.key);
-                                            
-                                          
-                                          
-                                          }];
-                             
-                             int a = 0;*/
-                             
-                             
-                             
-                             
-                           }];
-      
-      
-    } else {
-      // Switch to config tab
-      UIViewController* obj = [[self viewControllers] objectAtIndex:2];
-      CloudController* ctrl = (CloudController*)obj;
-      ctrl.rootController = self;
-      [self setSelectedIndex:2];
-    }
+  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                       NSUserDomainMask,
+                                                       YES);
+  NSString *documentsDirectory = [paths objectAtIndex:0];
+  NSString *path = [documentsDirectory stringByAppendingPathComponent:@"user_info.plist"];
+  NSFileManager *fileManager = [NSFileManager defaultManager];
+  NSDictionary* user_info;
+  if (![fileManager fileExistsAtPath:path]) {
+    id obj[] = {@"", @""};
+    id key[] = {@"email",@"pwd"};
+    user_info = [NSDictionary dictionaryWithObjects:obj forKeys:key count:2];
+    [user_info writeToFile:path atomically:YES];
+  } else {
+    user_info = [[NSDictionary alloc]
+                 initWithContentsOfFile:path];
+  }
+  NSString* email = [user_info objectForKey:@"email"];
+  NSString* pwd = [user_info objectForKey:@"pwd"];
+  if ([email length] != 0 && [pwd length] != 0) {
+    // Connect to data base with stored login
+    [[FIRAuth auth] signInWithEmail:email
+                           password:pwd
+                         completion:^(FIRUser* user, NSError* error){
+                           
+                           
+                           
+                           NSLog(@"Log : %@", error.localizedDescription);
+                           
+                           /*FIRDatabaseReference* ref = [[FIRDatabase database] reference];
+                            
+                            FIRDatabaseQuery* users = [ref child:@"data2/Ws9PLZoJfiM3GEBReLJf5qYQkL02"];
+                            
+                            //FIRDatabaseQuery* spec = [users queryEqualToValue:@"christophe"];
+                            
+                            [users observeEventType:FIRDataEventTypeChildAdded
+                            withBlock:^(FIRDataSnapshot* snapshot) {
+                            
+                            NSLog(@"key was : %@", snapshot.key);
+                            
+                            
+                            
+                            }];
+                            
+                            int a = 0;*/
+                           
+                           
+                           
+                           
+                         }];
+    
+    
+  } else {
+    // Switch to config tab
+    UIViewController* obj = [[self viewControllers] objectAtIndex:2];
+    CloudController* ctrl = (CloudController*)obj;
+    ctrl.rootController = self;
+    [self setSelectedIndex:2];
   }
 }
 

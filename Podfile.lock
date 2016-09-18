@@ -5,7 +5,7 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
-  - CorePlot (2.1)
+  - CorePlot (2.2)
   - FBSDKCoreKit (4.15.1):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.15.1):
@@ -68,15 +68,25 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
-  - CorePlot
+  - CorePlot (from `https://github.com/core-plot/core-plot.git`, branch `release-2.2`)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - FirebaseUI
 
+EXTERNAL SOURCES:
+  CorePlot:
+    :branch: release-2.2
+    :git: https://github.com/core-plot/core-plot.git
+
+CHECKOUT OPTIONS:
+  CorePlot:
+    :commit: 485c56240df03ef5f0bbf79bf4cb3489a651ad0c
+    :git: https://github.com/core-plot/core-plot.git
+
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  CorePlot: ab9898c79b94999018e9634ab0aa4c21480c8552
+  CorePlot: 628031b4a771b05b35c284d907ddacee97a91c0a
   FBSDKCoreKit: fc7fa53d16b095ee3fd53f0cd59f1df8bcbb634d
   FBSDKLoginKit: 073f79b3b2e762fc6f54a283fe15f45372d59f5f
   Firebase: 34187200ef4979dbd485c7aa685ef078bf587c86
@@ -93,6 +103,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: e6a3400e2d2b0c1bc27c7e06d85f11f939aa76d4
+PODFILE CHECKSUM: c7f86fb97731152d62b10664496d54c321c91ab6
 
 COCOAPODS: 1.0.1
